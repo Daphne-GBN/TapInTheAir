@@ -41,42 +41,7 @@ pip install opencv-python mediapipe pygame numpy
 python main.py 
 📷 Ensure your webcam is enabled before starting.
 
- ## 📂 Project Structure
-graph TD
-    A[TapInTheAir] --> B[main.py]
-    A --> C[hand_tracker.py]
-    A --> D[musical_tile.py]
-    A --> E[hud.py]
-    A --> F[pause.py]
-    A --> G[game_states.py]
-    A --> H[utils.py]
-    A --> I[assets]
-    I --> J[sounds]
-    J --> K[note1.wav]
-    J --> L[note2.wav]
-    J --> M[note3.wav]
-    J --> N[note4.wav]
-    J --> O[note5.wav]
-
----
-## 💡 Use Case
-
-TapInTheAir demonstrates natural user interfaces, real-time computer vision, and interactive audio systems, making it ideal for:
-
-Hackathons
-Computer vision demos
-Game programming portfolios
-Gesture-based UI experiments
----
-
-## 🧠 Future Enhancements
-
-Beat-synced tile spawning
-Combo & multiplier system
-Visual hit effects
-Gesture calibration
-Multiplayer or song modes
----
+ 
 
 ## 👤 Author
 Built with ❤️ by Daphne GBN
