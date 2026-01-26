@@ -37,13 +37,11 @@ Built using computer vision and audio processing, TapInTheAir turns natural fing
 ## ▶️ How to Run
 Make sure you have Python installed, then: 
 
- --bash
 pip install opencv-python mediapipe pygame numpy
-python main.py --
+python main.py 
 📷 Ensure your webcam is enabled before starting.
----
 
-## 📂 Project Structure
+ ## 📂 Project Structure
 graph TD
     A[TapInTheAir] --> B[main.py]
     A --> C[hand_tracker.py]
@@ -59,6 +57,7 @@ graph TD
     J --> M[note3.wav]
     J --> N[note4.wav]
     J --> O[note5.wav]
+
 ---
 ## 💡 Use Case
 
