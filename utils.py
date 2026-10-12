@@ -1,6 +1,3 @@
-import math
-
-
 def get_tile_color(level):
     if level <= 5:
         return (255, 255, 0)  # Yellow (Easy)
