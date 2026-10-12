@@ -12,6 +12,9 @@ import game_states
 import pause  # NEW
 
 
+# Resolve assets relative to this file so the game works from any working directory.
+ASSET_DIR = Path(__file__).resolve().parent / "Assets" / "sounds"
+
 # Initialize pygame mixer
 pygame.mixer.init()
 window_name = "TapInTheAir"
@@ -61,9 +64,6 @@ button_w, button_h = 200, 100
 fullscreen = False
 window_name = "TapInTheAir"
 cv2.namedWindow(window_name, cv2.WINDOW_NORMAL)
-
-# Resolve assets relative to this file so the game works from any working directory.
-ASSET_DIR = Path(__file__).resolve().parent / "Assets" / "sounds"
 
 try:
     while True:
