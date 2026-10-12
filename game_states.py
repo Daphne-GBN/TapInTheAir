@@ -46,28 +46,6 @@ def menu_state(frame, fingers, button_x, button_y, button_w, button_h):
 
     return False
 
-    # Play button
-    cv2.rectangle(
-        frame,
-        (button_x, button_y),
-        (button_x + button_w, button_y + button_h),
-        (0, 255, 0),
-        -1
-    )
-
-    cv2.putText(frame, "PLAY",
-                (button_x + 50, button_y + 65),
-                cv2.FONT_HERSHEY_SIMPLEX, 1,
-                (255, 255, 255), 3)
-
-    # Check for play tap
-    if fingers and is_finger_on_button(fingers, button_x, button_y, button_w, button_h):
-        time.sleep(0.5)
-        return True  # Start game
-
-    return False
-
-
 def game_over_state(frame, score, over_time):
     cv2.putText(frame, "GAME OVER",
                 (150, 200),
