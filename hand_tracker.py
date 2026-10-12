@@ -27,3 +27,7 @@ class HandTracker:
                 self.mp_draw.draw_landmarks(frame, hand_landmarks, self.mp_hands.HAND_CONNECTIONS)
 
         return frame, fingertip_positions
+
+    def close(self):
+        """Release MediaPipe resources when the game exits."""
+        self.hands.close()
